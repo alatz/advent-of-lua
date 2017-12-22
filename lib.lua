@@ -14,3 +14,20 @@ end
 function list_print(lst)
     for k, v in ipairs(lst) do print(v) end
 end
+
+function list_to_numbers(lst)
+    local out = {}
+    for i=1,#lst do table.insert(out, tonumber(lst[i])) end
+    return out
+end
+
+function list_to_numbers_0_index(lst)
+    local out = {}
+    for i=1,#lst do out[i-1] = tonumber(lst[i]) end
+    return out
+end
+
+function list_print_0_index(lst)
+    for i=0, #lst do print(lst[i]) end
+end
+
