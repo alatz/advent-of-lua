@@ -27,7 +27,7 @@ print("n: "..jumps)
 
 --part 2
 
---lst = list_to_numbers_0_index(list_create_pattern(input_day_5, "%S+"))
+lst = list_to_numbers_0_index(list_create_pattern(input_day_5, "%S+"))
 
 ----test
 --lst = list_to_numbers_0_index({0,3,0,1,-3})
