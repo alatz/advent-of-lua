@@ -1,3 +1,4 @@
+serpent = require('serpent')
 
 function list_create(str)
     local lst, tbl = string.gmatch(str, "[1-9]"), {}
@@ -31,3 +32,6 @@ function list_print_0_index(lst)
     for i=0, #lst do print(lst[i]) end
 end
 
+function pprint(lst)
+    print(serpent.block(lst))
+end
